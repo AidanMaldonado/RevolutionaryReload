@@ -46,6 +46,7 @@ class ViewController: UIViewController {
             ammo -= magFull
         } else if ammo >= 1 {
             mag = ammo
+            ammo = 0
         }
         updateLabels()
     }

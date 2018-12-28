@@ -40,6 +40,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kh9-dL-t8P">
+                                <rect key="frame" x="123" y="564" width="128" height="137"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Reload" image="ammo_13"/>
+                                <connections>
+                                    <action selector="reload" destination="BYZ-38-t0r" eventType="touchUpInside" id="DNr-OE-EzJ"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Ammo: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QJf-YZ-n1J">
                                 <rect key="frame" x="16" y="709" width="343" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -47,12 +55,37 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kh9-dL-t8P">
-                                <rect key="frame" x="123" y="564" width="128" height="137"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DQX-SZ-WPB">
+                                <rect key="frame" x="16" y="126" width="89" height="91"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Reload" image="ammo_13"/>
+                                <state key="normal" image="ResourcesFlatIcon_108"/>
                                 <connections>
-                                    <action selector="reload" destination="BYZ-38-t0r" eventType="touchUpInside" id="DNr-OE-EzJ"/>
+                                    <action selector="shoot" destination="BYZ-38-t0r" eventType="touchUpInside" id="K1d-nQ-wTh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CNe-Op-pQB">
+                                <rect key="frame" x="265" y="128" width="94" height="87"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="SurvivalArmorIcons_34"/>
+                                <connections>
+                                    <action selector="shoot" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Ij-3N-fKk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3pP-od-HZU">
+                                <rect key="frame" x="140" y="128" width="94" height="87"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="ResourcesFlatIcon_83"/>
+                                <connections>
+                                    <action selector="shoot" destination="BYZ-38-t0r" eventType="touchUpInside" id="iEJ-jj-6yj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bzC-qS-ufT">
+                                <rect key="frame" x="16" y="126" width="89" height="91"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="ResourcesFlatIcon_108"/>
+                                <connections>
+                                    <action selector="shoot" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rmm-xB-eXp"/>
+                                    <segue destination="lfd-5G-XZZ" kind="show" id="ReY-CH-RpM"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -69,8 +102,41 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="124.8768472906404"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="b2n-3i-yza">
+            <objects>
+                <viewController id="lfd-5G-XZZ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Pj7-cC-WYp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oAi-2a-Dmu">
+                                <rect key="frame" x="102" y="235" width="170" height="170"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="ammo_07"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pfs-6c-hp3">
+                                <rect key="frame" x="153" y="179" width="68" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Mtl-Zq-Pgc"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="phu-4q-v0Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1072.8" y="124.8768472906404"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="ResourcesFlatIcon_108" width="85.333335876464844" height="85.333335876464844"/>
+        <image name="ResourcesFlatIcon_83" width="85.333335876464844" height="85.333335876464844"/>
+        <image name="SurvivalArmorIcons_34" width="85.333335876464844" height="85.333335876464844"/>
+        <image name="ammo_07" width="170.66667175292969" height="170.66667175292969"/>
         <image name="ammo_13" width="170.66667175292969" height="170.66667175292969"/>
         <image name="pistols_08" width="170.66667175292969" height="170.66667175292969"/>
     </resources>
